@@ -1,0 +1,36 @@
+{
+  "name": "puppeteer_test",
+  "version": "1.0.0",
+  "description": "Automation testing with puppeteer and mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && mocha --timeout 999999 --reporter mochawesome lib/index.js",
+    "lint": "tslint --fix src/**/*.ts",
+    "moveJsonFiles": "copyfiles -u 1 src/selectors/* src/config/* src/helper/* lib",
+    "build": "npm run lint && rimraf lib && npm run moveJsonFiles && tsc --outDir lib",
+    "testlocal": "npm run build && npm run test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.20.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.2",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.5",
+    "@types/puppeteer": "^1.19.1",
+    "chai": "^4.2.0",
+    "copyfiles": "^2.1.1",
+    "it-each": "^0.4.0",
+    "mocha": "^6.2.0",
+    "mochawesome": "^4.1.0",
+    "pre-commit": "^1.2.2",
+    "puppeteer-debug": "^1.0.1",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.6.3"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 1,
+    "failures": 0,
+    "start": "2019-09-22T09:58:14.222Z",
+    "end": "2019-09-22T09:58:15.200Z",
+    "duration": 978,
+    "testsRegistered": 1,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1eb65242-1533-452a-8a70-db353c6689ae",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "df9a39aa-d669-4490-8107-18fcacfbfc96",
+          "title": "ecosystem-catalog tests",
+          "fullFile": "/home/asingla/ascension_migration/testing/final_test/puppeteer_test/lib/index.js",
+          "file": "/lib/index.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook",
+              "fullTitle": "ecosystem-catalog tests \"before all\" hook",
+              "timedOut": false,
+              "duration": 917,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "__awaiter(void 0, void 0, void 0, function* () {\n        browser = yield puppeteer.launch({\n            headless: config.isHeadless,\n            slowMo: config.slowMo,\n            timeout: config.launchTimeout,\n            devtools: config.isDevTool,\n        });\n        page = yield browser.newPage();\n        yield page.setDefaultTimeout(config.waitingTimeout);\n        yield page.setViewport({ width: config.viewportWidth, height: config.viewportHeight });\n    })",
+              "err": {},
+              "uuid": "08f78695-04c1-4079-8a9b-88db7a6650a4",
+              "parentUUID": "df9a39aa-d669-4490-8107-18fcacfbfc96",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook",
+              "fullTitle": "ecosystem-catalog tests \"after all\" hook",
+              "timedOut": false,
+              "duration": 56,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "__awaiter(void 0, void 0, void 0, function* () {\n        yield browser.close();\n    })",
+              "err": {},
+              "uuid": "6a857d0b-3d56-4fdd-b929-918b8f755168",
+              "parentUUID": "df9a39aa-d669-4490-8107-18fcacfbfc96",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Explore Home-> Hardware-> Hardware",
+              "fullTitle": "ecosystem-catalog tests Explore Home-> Hardware-> Hardware",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "1ccd8864-4583-47d1-a9e4-ccf73afa59de",
+              "parentUUID": "df9a39aa-d669-4490-8107-18fcacfbfc96",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "1ccd8864-4583-47d1-a9e4-ccf73afa59de"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 999999
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 999999
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.0.1"
+    }
+  }
+}
